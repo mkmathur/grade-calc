@@ -1,0 +1,77 @@
+legend {
+	font-weight: bold;
+}
+
+#content {
+	width: 50%;
+}
+
+fieldset {
+	margin-bottom: 1em;
+	padding-bottom: 0em;
+}
+
+ol {
+	list-style-type: none;
+}
+
+i {
+	padding-left: 3px;
+	cursor: default;
+}
+
+.buttons {
+	cursor: default;
+	display: inline-block;
+}
+
+button i {
+	padding-right: 5px;
+}
+
+.options {
+	float: left;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 100%;
+	padding-left: 40px;
+}
+
+.options div {
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+
+.itemlabel {
+	width: 8em;
+	float: left;
+}
+
+* {
+	font-family: Georgia;
+}
+
+#percentarea {
+	text-align: center;
+}
+
+#approxpct {
+	color: green;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.listscores {
+	clear: both;
+}
+
+.error {
+	color: red;
+}
+
+button {
+	font-size: 1em;
+}
+
