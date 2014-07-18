@@ -52,11 +52,12 @@ button i {
 	font-family: Georgia;
 }
 
-#percentarea {
+#results {
 	text-align: center;
+	padding: 1em;
 }
 
-#approxpct {
+#pct {
 	color: green;
 	font-size: 1.5em;
 	font-weight: bold;

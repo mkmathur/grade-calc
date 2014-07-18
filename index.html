@@ -28,7 +28,7 @@
 						</div>	
 					</legend>
 					<div class='options'>
-						<div data-bind="visible: scores().length > 0">
+						<div>
 							<div class="weight">
 								<label>
 									Weight: 
@@ -61,8 +61,14 @@
 				</fieldset>
 			</form>
 			<button data-bind="click: $root.add"><i class="fa fa-plus-square-o"></i>Add category</button>
-			<div id='percentarea'>
-				<span id='approxpct' data-bind="text: Math.round(grade() * 100) / 100"></span>%
+			<div id='results'>
+				<div class="error" data-bind="visible: totalWeight() != 100">
+					Warning: Weights do not add up to 100%.
+					Total weight is <span data-bind="text: totalWeight()"></span>%.
+				</div>
+				<div data-bind="visible: totalWeight() == 100">
+					<span id='pct' data-bind="text: Math.round(grade() * 100) / 100"></span>%
+				</div>
 			</div>
 		</div>
 		<script type='text/javascript' src='lib/viewmodel.js'></script>

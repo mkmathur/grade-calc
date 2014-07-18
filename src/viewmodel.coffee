@@ -50,12 +50,12 @@ class CalculatorViewModel
 		@grade = ko.computed =>
 			grade = 0
 			for cat in @categories()
-				grade += cat.weight() * cat.percent() / 100
+				grade += Number cat.weight() * cat.percent() / 100
 			grade
 		@totalWeight = ko.computed =>
 			total = 0
 			for cat in @categories()
-				total += cat.weight()
+				total += Number cat.weight()
 			total
 
 ko.applyBindings new CalculatorViewModel
